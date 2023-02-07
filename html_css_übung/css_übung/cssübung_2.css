@@ -1,0 +1,84 @@
+*,
+*:before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("wand.webp") no-repeat;
+  object-fit: cover;
+  background-size: cover;
+}
+.container {
+  background-color: #52277c;
+  color: #ffffff;
+  padding: 2rem;
+}
+.container h3{
+  margin-bottom: 2rem;
+}
+.form-control {
+  margin-bottom: 2rem;
+  position:relative;
+}
+.form-control input,
+.form-control textarea {
+  padding: 0.5rem;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 1rem;
+}
+.form-control input ~ label ,
+.form-control textarea ~ label{
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  padding: 0.5rem;
+  transition: 300ms all;
+  -webkit-transition: 300ms all;
+  -moz-transition: 300ms all;
+  -ms-transition: 300ms all;
+  -o-transition: 300ms all;
+}
+.form-control input:focus ~ label ,
+.form-control textarea:focus ~ label{
+  top:-1.5rem;
+  color: lightpink;
+  font-size: 0.8rem;
+}
+.form-control input:focus ~ label ,
+.form-control textarea:focus ~ label,
+.form-control input:valid ~ label ,
+.form-control textarea:valid ~ label{
+  top: -1.5rem;
+  color: lightpink;
+  font-size: 0.8rem;
+}
+.form-control input[type="submit"] {
+  background-color: lightpink;
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  transition: 300ms all;
+  -webkit-transition: 300ms all;
+  -moz-transition: 300ms all;
+  -ms-transition: 300ms all;
+  -o-transition: 300ms all;
+}
+.form-control input[type="submit"]:hover{
+  background-color: goldenrod;
+}
