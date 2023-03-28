@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple_2 Animation</title>
+  <style>
+div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #834ecb;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example {
+  0%   {background-color: #ac83de; left:0px; top:0px;}
+  25%  {background-color: #96962f; left:200px; top:0px;}
+  50%  {background-color: #b77bb7; left:200px; top:200px;}
+  75%  {background-color: #7ed37e; left:0px; top:200px;}
+  100% {background-color: #8b50dc; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+<h1>Simple_2 Animation</h1>
+
+<p>This example uses six of the animation properties:</p>
+
+<div></div>
+
+</body>
+</html>
